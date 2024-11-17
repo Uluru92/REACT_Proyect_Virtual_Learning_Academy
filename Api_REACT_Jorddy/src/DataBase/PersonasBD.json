@@ -1,0 +1,22 @@
+{
+  "PersonasRegistradas": [
+    {
+      "nombre": "",
+      "correo": "jorddy.castro@gmail.com",
+      "userName": "Jorddy",
+      "passWord": ""
+    },
+    {
+      "nombre": "",
+      "correo": "caro_rojas92@hotmail.com",
+      "userName": "Carolina",
+      "passWord": ""
+    },
+    {
+      "nombre": "",
+      "correo": "Adolfo_123@VLAcademy.com",
+      "userName": "Adolfo",
+      "passWord": ""
+    }
+  ]
+}

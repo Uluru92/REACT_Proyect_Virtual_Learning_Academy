@@ -1,0 +1,228 @@
+{
+    "PaisesRegistrados": [
+        {
+            "idPais": "+506",
+            "nombrePais": "Costa Rica",
+            "capital": "San José",
+            "moneda": "Colón costarricense",
+            "poblacion": "5.16 millones",
+            "presidente": "Rodrigo Chaves Robles",
+            "limitaCon": [
+                "Nicaragua",
+                "Panamá"
+            ],
+            "noticiasRelevantes": [
+                "El gobierno de Costa Rica ha lanzado un nuevo programa de reforestación masiva para enfrentar el cambio climático. La iniciativa busca restaurar más de 10,000 hectáreas de bosques y proteger la biodiversidad.",
+                "Costa Rica ha anunciado la ampliación de su infraestructura turística con nuevos parques naturales y rutas ecológicas, con el objetivo de atraer más turistas mientras preserva la flora y fauna del país.",
+                "El país ha implementado un proyecto de educación digital en zonas rurales, proporcionando equipos tecnológicos a estudiantes y capacitación a docentes."
+            ],
+            "lugaresTuristicos": [
+                "Parque Nacional Manuel Antonio",
+                "Volcán Arenal",
+                "Monteverde Cloud Forest Reserve"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=QXt21aGi_nQ"
+        },
+        {
+            "idPais": "+507",
+            "nombrePais": "Panama",
+            "capital": "Ciudad de Panamá",
+            "moneda": "Balboa / Dólar estadounidense",
+            "poblacion": "4.5 millones",
+            "presidente": "Laurentino Cortizo",
+            "limitaCon": [
+                "Costa Rica",
+                "Colombia"
+            ],
+            "noticiasRelevantes": [
+                "El gobierno de Panamá aprobó reformas fiscales para mejorar la competitividad, con incentivos a pequeñas y medianas empresas y la mejora de procesos administrativos.",
+                "La Autoridad del Canal de Panamá ha anunciado la expansión de la capacidad de tránsito de buques, con nuevas tecnologías y modernización de la infraestructura.",
+                "Panamá avanza en la implementación de energías renovables, con proyectos solares y eólicos en diversas regiones, para reducir su dependencia de los combustibles fósiles."
+            ],
+            "lugaresTuristicos": [
+                "Canal de Panamá",
+                "Casco Antiguo",
+                "Archipiélago de Bocas del Toro"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=l8kkC93ibCw"
+        },
+        {
+            "idPais": "+57",
+            "nombrePais": "Colombia",
+            "capital": "Bogotá",
+            "moneda": "Peso colombiano",
+            "poblacion": "52.5 millones",
+            "presidente": "Gustavo Petro",
+            "limitaCon": [
+                "Venezuela",
+                "Brasil",
+                "Perú",
+                "Ecuador",
+                "Panamá"
+            ],
+            "noticiasRelevantes": [
+                "Colombia lanzó reformas agrarias para mejorar la distribución de tierras y reducir la desigualdad social.",
+                "El presidente Petro presentó un plan para la reactivación de la industria del petróleo y gas, con un enfoque hacia energías más limpias y renovables.",
+                "Colombia firmó un acuerdo de paz con el grupo guerrillero ELN, lo que se considera un paso importante hacia la estabilidad del país."
+            ],
+            "lugaresTuristicos": [
+                "Cartagena de Indias",
+                "Parque Nacional Natural Tayrona",
+                "Eje cafetero"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=3iRbX0WfJOY"
+        },
+        {
+            "idPais": "+503",
+            "nombrePais": "El Salvador",
+            "capital": "San Salvador",
+            "moneda": "Dólar estadounidense",
+            "poblacion": "6.5 millones",
+            "presidente": "Nayib Bukele",
+            "limitaCon": [
+                "Guatemala",
+                "Honduras"
+            ],
+            "noticiasRelevantes": [
+                "El presidente Nayib Bukele adoptó el Bitcoin como moneda oficial, siendo El Salvador el primer país en hacerlo.",
+                "El Salvador está modernizando su infraestructura turística con proyectos de ecoturismo y mejoras en la infraestructura marítima.",
+                "El gobierno intensificó su estrategia de seguridad, logrando una disminución significativa de la violencia en diversas zonas del país."
+            ],
+            "lugaresTuristicos": [
+                "Ruta de las Flores",
+                "Parque Nacional El Imposible",
+                "La Libertad"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=Zv9sAoEi1Bg"
+        },
+        {
+            "idPais": "+54",
+            "nombrePais": "Argentina",
+            "capital": "Buenos Aires",
+            "moneda": "Peso argentino",
+            "poblacion": "46.6 millones",
+            "presidente": "Javier Milei",
+            "limitaCon": [
+                "Chile",
+                "Bolivia",
+                "Paraguay",
+                "Brasil",
+                "Uruguay"
+            ],
+            "noticiasRelevantes": [
+                "Argentina lanzó un plan de estabilización económica para combatir la inflación y el desempleo.",
+                "El gobierno argentino está impulsando proyectos de energías renovables, con un enfoque en energía solar y eólica.",
+                "Argentina está explorando nuevas oportunidades comerciales con Asia, especialmente con China y Japón, para diversificar sus exportaciones."
+            ],
+            "lugaresTuristicos": [
+                "Cataratas del Iguazú",
+                "Glaciar Perito Moreno",
+                "Mendoza y sus viñedos"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=57waq1HdllQ"
+        },
+        {
+            "idPais": "+52",
+            "nombrePais": "México",
+            "capital": "Ciudad de México",
+            "moneda": "Peso mexicano",
+            "poblacion": "126.2 millones",
+            "presidente": "Andrés Manuel López Obrador",
+            "limitaCon": [
+                "Estados Unidos",
+                "Guatemala",
+                "Belice"
+            ],
+            "noticiasRelevantes": [
+                "México lanzó un ambicioso plan para impulsar el uso de energías renovables, con proyectos de energía solar y eólica.",
+                "La violencia en algunas regiones de México ha aumentado, lo que ha llevado a nuevas estrategias de seguridad.",
+                "México está reactivando su industria turística tras la pandemia, promoviendo tanto el turismo interno como internacional."
+            ],
+            "lugaresTuristicos": [
+                "Chichen Itzá",
+                "Cabo San Lucas",
+                "Cancún"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=VbaHIOyqbXs"
+        },
+        {
+            "idPais": "+55",
+            "nombrePais": "Brasil",
+            "capital": "Brasilia",
+            "moneda": "Real brasileño",
+            "poblacion": "213 millones",
+            "presidente": "Luiz Inácio Lula da Silva",
+            "limitaCon": [
+                "Argentina",
+                "Bolivia",
+                "Colombia",
+                "Guyana",
+                "Paraguay",
+                "Perú",
+                "Surinam",
+                "Uruguay"
+            ],
+            "noticiasRelevantes": [
+                "Brasil ha lanzado iniciativas para combatir la deforestación en la Amazonía, con un enfoque en la protección del medio ambiente.",
+                "El gobierno de Lula da Silva está trabajando en la reactivación de la economía y la creación de empleos, con énfasis en la sostenibilidad.",
+                "Brasil ha firmado acuerdos comerciales con países asiáticos y europeos para aumentar su presencia en el mercado global."
+            ],
+            "lugaresTuristicos": [
+                "Cristo Redentor",
+                "Cataratas de Iguazú",
+                "Amazonas"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=EngUVw5mHrY"
+        },
+        {
+            "idPais": "+56",
+            "nombrePais": "Chile",
+            "capital": "Santiago",
+            "moneda": "Peso chileno",
+            "poblacion": "19.5 millones",
+            "presidente": "Gabriel Boric",
+            "limitaCon": [
+                "Argentina",
+                "Bolivia",
+                "Perú"
+            ],
+            "noticiasRelevantes": [
+                "Chile está impulsando una reforma educacional para garantizar una educación de calidad para todos, enfocándose en mejorar la infraestructura y el acceso a tecnologías.",
+                "El gobierno de Boric ha intensificado las políticas medioambientales, con planes para proteger los glaciares y aumentar la inversión en energías renovables.",
+                "Chile sigue liderando la producción de cobre a nivel mundial, y está expandiendo sus capacidades de minería para satisfacer la creciente demanda."
+            ],
+            "lugaresTuristicos": [
+                "Desierto de Atacama",
+                "Isla de Pascua",
+                "Valparaíso"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=1Pq79-lv1tI"
+        },
+        {
+            "idPais": "+51",
+            "nombrePais": "Perú",
+            "capital": "Lima",
+            "moneda": "Nuevo sol",
+            "poblacion": "33.1 millones",
+            "presidente": "Dina Boluarte",
+            "limitaCon": [
+                "Ecuador",
+                "Colombia",
+                "Brasil",
+                "Bolivia",
+                "Chile"
+            ],
+            "noticiasRelevantes": [
+                "Perú está impulsando el turismo en su región andina, promoviendo la biodiversidad y la riqueza cultural del país.",
+                "El gobierno está invirtiendo en infraestructura vial para conectar mejor las regiones remotas, lo que mejorará la economía regional.",
+                "Perú está fortaleciendo su mercado agrícola para aumentar las exportaciones de productos como el café, la quinua y los espárragos."
+            ],
+            "lugaresTuristicos": [
+                "Machu Picchu",
+                "Lago Titicaca",
+                "Cusco"
+            ],
+            "videoLink": "https://www.youtube.com/watch?v=9vgm-9kde5E"
+        }
+    ]
+}
