@@ -30,4 +30,5 @@ const CaptandoDatosBasicos: React.FC = () =>
     )
 }
 
+
 export default CaptandoDatosBasicos;
