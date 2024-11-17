@@ -1,4 +1,3 @@
-
 const ModalView: React.FC = () =>
 {
     return (
