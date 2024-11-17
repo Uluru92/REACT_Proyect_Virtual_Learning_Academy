@@ -1,5 +1,6 @@
 import App from './App';
 import ReactDOM from 'react-dom/client';
+import ModalView from './Views/ModalView';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
 import HookUseRefView from './Views/HookUseRefView';
@@ -19,6 +20,8 @@ root.render(
         <Route path='/hookuseref' element={<HookUseRefView />} />
         <Route path='/formulario' element={<FormularioComponent />} />
         <Route path='/hookuseeffect' element={<HookUseEffectView />} />
+        <Route path='/mostrarModal' element={<ModalView/>} />
+
 
       </Route>
     </Routes>
