@@ -16,7 +16,8 @@ const CaptandoDatosBasicos: React.FC = () =>
     return (
         <div className="container">
             <h1>Ejercicio de Use Ref 1</h1>
-            <input className="form-control"
+            <input
+                className="form-control"
                 placeholder="Digite algo"
                 type="text"
                 ref={inputValor}
