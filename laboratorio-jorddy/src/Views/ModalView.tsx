@@ -13,10 +13,13 @@ const ModalView: React.FC = () =>
     return (
         <div className="container">
             <h1>Ejercicio con modal</h1>
-            <button onClick={AbrirModalDetalle}>Quiero ver mas informacion</button>
+            <button className="btn btn-warning" onClick={AbrirModalDetalle}>Quiero ver mas informacion</button>
             <MensajesInformativosComponent
                 modalAbierto={modalAbierto}
-                setModalAbierto={setModalAbierto}></MensajesInformativosComponent>
+                setModalAbierto={setModalAbierto}
+                detalleMensaje="Consola Play 1"></MensajesInformativosComponent>
+                
+            
         </div >
     )
 }

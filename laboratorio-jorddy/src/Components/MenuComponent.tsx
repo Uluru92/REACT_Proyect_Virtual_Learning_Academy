@@ -23,7 +23,7 @@ function MenuComponent() {
                                 <NavDropdown.Item href="#action/3.1">Carruseles</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={'formulario'}>Formularios</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Apis</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">Modal</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={'mostrarModal'}>Modal</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>

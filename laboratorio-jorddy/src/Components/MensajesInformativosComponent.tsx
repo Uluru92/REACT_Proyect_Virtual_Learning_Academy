@@ -4,10 +4,12 @@ import { Modal, ModalBody, ModalHeader, ModalTitle } from "react-bootstrap";
 interface MensajesInformativosComponentProps//Asi se genera/dispara un evento modal
 { 
     modalAbierto: boolean, //Este garantiza el estado
-    setModalAbierto: React.Dispatch<React.SetStateAction<boolean>>; //este lo habilita
+    detalleMensaje: string,
+    
+    setModalAbierto : React.Dispatch<React.SetStateAction<boolean>>; //este lo habilita
 }
 
-const MensajesInformativosComponent: React.FC<MensajesInformativosComponentProps> = ({modalAbierto,setModalAbierto}) =>{
+const MensajesInformativosComponent: React.FC<MensajesInformativosComponentProps> = ({ modalAbierto, setModalAbierto, detalleMensaje }) =>{
     
     function cerrarModal()
     {
@@ -22,7 +24,7 @@ const MensajesInformativosComponent: React.FC<MensajesInformativosComponentProps
                     <ModalTitle>Detalle del modal</ModalTitle>
                 </ModalHeader>
                 <ModalBody>
-                    <p>Estoy saludando a mis estudiantes</p>
+                <p>{detalleMensaje}</p>
                 </ModalBody>
             </Modal>
         </div>;
