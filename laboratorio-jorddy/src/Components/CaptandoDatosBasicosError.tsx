@@ -36,7 +36,7 @@ const CaptandoDatosBasicosError: React.FC = () =>
 
     return (
         <div className="container">
-            <h1>Ejercicio de Use Ref 1 Mala practica</h1>
+            <h1>Ejercicio de Use Ref 1 Buena practica</h1>
             <input
                 className="form-control"
                 placeholder="Digite el nombre"
