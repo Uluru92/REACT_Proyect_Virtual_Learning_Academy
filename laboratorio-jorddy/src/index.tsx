@@ -7,12 +7,13 @@ import HookUseRefView from './Views/HookUseRefView';
 import HookUseStateView from './Views/HookUseStateView';
 import HookUseEffectView from './Views/HookUseEffectView';
 import FormularioComponent from './Components/FormularioComponent';
+import HookuseContextConsumerView from './Views/HookUseContextConsumerView';
+import HookuseContextProviderView from './Views/HookUseContextConsumerView';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
 root.render(
-  
   <Router>
     <Routes>
       <Route path='/' element={<App />}>
@@ -20,13 +21,13 @@ root.render(
         <Route path='/hookuseref' element={<HookUseRefView />} />
         <Route path='/formulario' element={<FormularioComponent />} />
         <Route path='/hookuseeffect' element={<HookUseEffectView />} />
+        <Route path='/usecontextprovider' element={<HookuseContextProviderView />} />
+        <Route path='/usecontextconsumer' element={<HookuseContextConsumerView />} />
         <Route path='/mostrarModal' element={<ModalView/>} />
-
 
       </Route>
     </Routes>
   </Router>,
-  
 );
 
 reportWebVitals();
