@@ -1,0 +1,10 @@
+.contenedorConsola
+{
+    display: flex;
+}
+
+.estiloContenedorConsola
+{
+    margin: 13px;
+    width: 12rem;
+}
