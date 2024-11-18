@@ -9,15 +9,18 @@ const LoginComponent: React.FC = () =>
     const [password, setPassword] = useState<string>("");
 
     //variables del login
-    if (!context) {
+    if (!context)
         return <div>Error, contexto no disponible</div>
-    }
-
+    
     const { value, setValue } = context;
 
     function ValidarCredenciales()
     {
-
+        //Aca va la logica para el consumo del pai de validar credenciales
+        if (usuario === "adming" && password === "12345")
+            setValue("Bienvenido," + usuario)
+        else
+            setValue("Credenciales incorrectas")
     }
 
     return (
@@ -35,7 +38,7 @@ const LoginComponent: React.FC = () =>
                 value={password}
                 onChange={(e => setUsuario(e.target.value))}/>
             <br /><br />
-            <button className="btn btn-success" onClick={() => setValue("Nuevo valor")}>Agregar Contexto</button>
+            <button className="btn btn-success" onClick={ValidarCredenciales}>Agregar Contexto</button>
         </div >
     )
 }
