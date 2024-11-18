@@ -13,7 +13,7 @@ const ValidarCredencialesLogin = (req,res)=>
         const TodasLasPersonas = personasBD.ObtenerTodasLasPersonas();
         const existeUsuario = TodasLasPersonas.some(tx => tx.userName === informacionUsuario.userName
                                                         && tx.passWord === informacionUsuario.passWord);
-
+        let usuarioRespuesta = {correo: "", nombre: ""}
         let codigoDeRespuesta = 0;
         let descripcionRespuesta = "Acceso Permitido";
 
@@ -22,11 +22,23 @@ const ValidarCredencialesLogin = (req,res)=>
             codigoDeRespuesta = 99;
             descripcionRespuesta = "Acceso Denegado";
         }
+        else
+        {
+            const UsuarioEncontrado = TodasLasPersonas.find(tx => tx.userName === informacionUsuario.userName
+                && tx.passWord === informacionUsuario.passWord);
+            
+            usuarioRespuesta.nombre = UsuarioEncontrado.nombre;
+            usuarioRespuesta.correo = UsuarioEncontrado.correo;
+        }
 
         const DetalleRespuesta= 
         {
-            Codigo : codigoDeRespuesta,
-            Descripcion : descripcionRespuesta
+            RespuestaApi:
+            {
+                Codigo: codigoDeRespuesta,
+                Descripcion: descripcionRespuesta
+            },
+            Detalle: usuarioRespuesta
         }
 
         res.send(DetalleRespuesta);

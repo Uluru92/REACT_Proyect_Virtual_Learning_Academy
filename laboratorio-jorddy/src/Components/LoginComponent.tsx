@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { MyContext } from "../MyContext";
 import axios from "axios";
-import { Credenciales } from "../Models/Credenciales";
+import { CredencialesEntrada } from "../Models/Credenciales";
 import API_ENDPOINTS from "../Endpoints";
 
 const LoginComponent: React.FC = () =>
@@ -21,7 +21,7 @@ const LoginComponent: React.FC = () =>
 
     async function ValidarCredenciales()
     {
-        const PersonaCredenciales = new Credenciales(usuario, password);
+        const PersonaCredenciales = new CredencialesEntrada(usuario, password);
         const respuesta = await axios.post(API_ENDPOINTS.ValidarCredencialesLogin, PersonaCredenciales);
         
         //Aca va la logica para el consumo del Api de validar credenciales
