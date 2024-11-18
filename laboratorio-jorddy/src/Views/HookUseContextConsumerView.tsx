@@ -13,7 +13,7 @@ const HookuseContextConsumerView: React.FC = () =>
 
     return (
         <div>
-            <h1>Hola</h1>
+            <h1>Hola estoy en el hook</h1>
             <h3>Valor actual es: {value}</h3>
             <button className="btn btn-success" onClick={() => setValue("Nuevo valor")}>Agregar Contexto</button>
         </div >
