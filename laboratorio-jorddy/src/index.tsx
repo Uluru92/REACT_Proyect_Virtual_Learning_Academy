@@ -9,22 +9,25 @@ import HookUseEffectView from './Views/HookUseEffectView';
 import FormularioComponent from './Components/FormularioComponent';
 import HookuseContextConsumerView from './Views/HookUseContextConsumerView';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { MyProvider } from './MyContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
 
 root.render(
-  <Router>
-    <Routes>
-      <Route path='/' element={<App />}>
-        <Route path='/hookusestate' element={<HookUseStateView />} />
-        <Route path='/hookuseref' element={<HookUseRefView />} />
-        <Route path='/formulario' element={<FormularioComponent />} />
-        <Route path='/hookuseeffect' element={<HookUseEffectView />} />
-        <Route path='/usecontextconsumer' element={<HookuseContextConsumerView />} />
-        <Route path='/mostrarModal' element={<ModalView/>} />
-      </Route>
-    </Routes>
-  </Router>,
+  <MyProvider> 
+    <Router>
+      <Routes>
+        <Route path='/' element={<App />}>
+          <Route path='/hookusestate' element={<HookUseStateView />} />
+          <Route path='/hookuseref' element={<HookUseRefView />} />
+          <Route path='/formulario' element={<FormularioComponent />} />
+          <Route path='/hookuseeffect' element={<HookUseEffectView />} />
+          <Route path='/usecontextconsumer' element={<HookuseContextConsumerView />} />
+          <Route path='/mostrarModal' element={<ModalView/>} />
+        </Route>
+      </Routes>
+      </Router>
+  </MyProvider>,
 );
 
 reportWebVitals();
