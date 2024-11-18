@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
 import { MyContext } from "../MyContext";
+import axios from "axios";
+import { Credenciales } from "../Models/Credenciales";
 
 const LoginComponent: React.FC = () =>
 {
@@ -14,10 +16,13 @@ const LoginComponent: React.FC = () =>
     
     const { value, setValue } = context;
 
-    function ValidarCredenciales()
+    async function ValidarCredenciales()
     {
-        //Aca va la logica para el consumo del pai de validar credenciales
-        if (usuario === "admin" && password === "12345") {
+        const PersonaCredenciales = new Credenciales(usuario, password);
+        const respuesta = await axios.post("http://localhost:3015/api/route/ValidarCredencialesLogin", PersonaCredenciales);
+        
+        //Aca va la logica para el consumo del Api de validar credenciales
+        if (respuesta.data.Codigo == 0) {
             setValue("Bienvenido," + usuario)
             alert("Bienvenido")
         }

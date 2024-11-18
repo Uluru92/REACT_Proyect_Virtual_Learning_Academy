@@ -1,10 +1,10 @@
 {
   "PersonasRegistradas": [
     {
-      "nombre": "",
+      "nombre": "Fabian",
       "correo": "jorddy.castro@gmail.com",
-      "userName": "Jorddy",
-      "passWord": ""
+      "userName": "Uluru",
+      "passWord": "12345"
     },
     {
       "nombre": "",
