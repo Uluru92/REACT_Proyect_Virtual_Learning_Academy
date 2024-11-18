@@ -1,10 +1,13 @@
 import React from "react";
+import HookuseContextConsumerView from "./HookUseContextConsumerView";
 
 
-const HookuseContextProviderView: React.FC = () => {
+const HookuseContextProviderView: React.FC = () =>
+{
     return (
         <div>
-            <h1>Hola 2</h1>
+            <h1>Componente A</h1>
+            <HookuseContextConsumerView></HookuseContextConsumerView>
         </div >
     )
 }

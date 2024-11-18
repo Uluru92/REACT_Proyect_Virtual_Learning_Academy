@@ -8,7 +8,7 @@ import HookUseStateView from './Views/HookUseStateView';
 import HookUseEffectView from './Views/HookUseEffectView';
 import FormularioComponent from './Components/FormularioComponent';
 import HookuseContextConsumerView from './Views/HookUseContextConsumerView';
-import HookuseContextProviderView from './Views/HookUseContextConsumerView';
+import HookuseContextProviderView from './Views/HookUseContextProvideView';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root')!);
