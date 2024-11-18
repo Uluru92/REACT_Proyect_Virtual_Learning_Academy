@@ -7,6 +7,8 @@ const LoginComponent: React.FC = () =>
 {
     //Uso del contexto, de la clase que creamos
     const context = useContext(MyContext)
+
+    //variables del login
     const [usuario, setUsuario] = useState<string>("");
     const [password, setPassword] = useState<string>("");
 
