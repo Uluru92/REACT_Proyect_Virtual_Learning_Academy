@@ -3,7 +3,7 @@
 import CaptandoDatosBasicos from "../Components/CaptandoDatosBasicos";
 import CaptandoDatosBasicosError from "../Components/CaptandoDatosBasicosError";
 
-const HookUseStateView: React.FC = () => {
+const hookuseref: React.FC = () => {
     return (
         <div>
             <CaptandoDatosBasicos></CaptandoDatosBasicos>
@@ -12,4 +12,4 @@ const HookUseStateView: React.FC = () => {
     )
 }
 
-export default HookUseStateView;
+export default hookuseref;

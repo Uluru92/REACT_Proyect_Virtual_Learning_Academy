@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 function MenuComponent() {
     return (
         <div>
-            <h1>Hola</h1>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container>
                     <Navbar.Brand href="#home">Uluru Design</Navbar.Brand>
