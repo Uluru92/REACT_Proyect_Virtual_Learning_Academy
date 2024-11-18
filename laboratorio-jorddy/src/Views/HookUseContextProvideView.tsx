@@ -1,7 +1,6 @@
 import React from "react";
 import HookuseContextConsumerView from "./HookUseContextConsumerView";
 
-
 const HookuseContextProviderView: React.FC = () =>
 {
     return (

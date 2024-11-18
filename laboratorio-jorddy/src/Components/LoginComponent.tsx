@@ -17,10 +17,14 @@ const LoginComponent: React.FC = () =>
     function ValidarCredenciales()
     {
         //Aca va la logica para el consumo del pai de validar credenciales
-        if (usuario === "adming" && password === "12345")
+        if (usuario === "admin" && password === "12345") {
             setValue("Bienvenido," + usuario)
-        else
+            alert("Bienvenido")
+        }
+        else {
             setValue("Credenciales incorrectas")
+            alert("Lo sentimos")
+        }
     }
 
     return (
@@ -36,7 +40,7 @@ const LoginComponent: React.FC = () =>
                 className="form-control"
                 placeholder="DIgite su contraseña"
                 value={password}
-                onChange={(e => setUsuario(e.target.value))}/>
+                onChange={(e => setPassword(e.target.value))}/>
             <br /><br />
             <button className="btn btn-success" onClick={ValidarCredenciales}>Agregar Contexto</button>
         </div >
