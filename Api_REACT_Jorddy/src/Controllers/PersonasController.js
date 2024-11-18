@@ -24,7 +24,7 @@ const ValidarCredencialesLogin = (req,res)=>
         }
         else
         {
-            const UsuarioEncontrado = TodasLasPersonas.find(tx => tx.userName === informacionUsuario.userName
+            const UsuarioEncontrado = TodasLasPersonas.find(tx => tx.userName === informacionUsuario.userName //eL .find me devuelve el objeto
                 && tx.passWord === informacionUsuario.passWord);
             
             usuarioRespuesta.nombre = UsuarioEncontrado.nombre;
@@ -33,11 +33,8 @@ const ValidarCredencialesLogin = (req,res)=>
 
         const DetalleRespuesta= 
         {
-            RespuestaApi:
-            {
-                Codigo: codigoDeRespuesta,
-                Descripcion: descripcionRespuesta
-            },
+            Codigo: codigoDeRespuesta,
+            Descripcion: descripcionRespuesta,
             Detalle: usuarioRespuesta
         }
 
