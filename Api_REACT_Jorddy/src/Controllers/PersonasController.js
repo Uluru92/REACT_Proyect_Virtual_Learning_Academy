@@ -117,7 +117,6 @@ const EditarPersona = (req, res) =>
     res.send(DetalleRespuesta);
 }
 
-
 module.exports = {
     ObtenerTodasLasPersonas,
     ValidarCredencialesLogin,
