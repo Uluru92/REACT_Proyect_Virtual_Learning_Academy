@@ -4,6 +4,7 @@ import ModalView from './Views/ModalView';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import reportWebVitals from './reportWebVitals';
 import HookUseRefView from './Views/HookUseRefView';
+import HookUseMemoView from './Views/HookUseMemoView';
 import HookUseStateView from './Views/HookUseStateView';
 import HookUseEffectView from './Views/HookUseEffectView';
 import FormularioComponent from './Components/FormularioComponent';
@@ -23,7 +24,8 @@ root.render(
           <Route path='/formulario' element={<FormularioComponent />} />
           <Route path='/hookuseeffect' element={<HookUseEffectView />} />
           <Route path='/usecontextconsumer' element={<HookuseContextConsumerView />} />
-          <Route path='/mostrarModal' element={<ModalView/>} />
+          <Route path='/mostrarModal' element={<ModalView />} />
+          <Route path='/usememo' element={<HookUseMemoView/>} />
         </Route>
       </Routes>
       </Router>
