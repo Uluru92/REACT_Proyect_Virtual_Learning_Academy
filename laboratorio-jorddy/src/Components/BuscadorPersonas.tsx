@@ -31,13 +31,20 @@ const BuscadorPersonas: React.FC = () =>
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}></input>
             <br /><br />
-            <ul>
-                {
-                    filteredUsers.map(user => (
-                        <li key={user.id}>{user.name}</li>
-                    ))
-                }
-            </ul>
+            <table>
+                <thead>
+                    <th>Nombre de la persona</th>
+                </thead>
+                <tbody>
+                    {
+                        filteredUsers.map(user => (
+                        <tr>
+                            <td key={user.id}>{user.name}</td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
         </div >
     )
 }
