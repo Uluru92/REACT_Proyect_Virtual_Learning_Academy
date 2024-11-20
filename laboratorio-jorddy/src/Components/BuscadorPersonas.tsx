@@ -50,3 +50,4 @@ const BuscadorPersonas: React.FC = () =>
 }
 
 export default BuscadorPersonas;
+
