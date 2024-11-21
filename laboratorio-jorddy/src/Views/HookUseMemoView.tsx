@@ -1,4 +1,5 @@
 import BuscadorPersonas from "../Components/BuscadorPersonas";
+import ContadorTareas from "../Components/ContadorTareas";
 import TablaMultiplicar from "../Components/TablaMultiplicar";
 
 const HookUseMemoView: React.FC = () => {
@@ -6,6 +7,7 @@ const HookUseMemoView: React.FC = () => {
         <div className="container">
             <BuscadorPersonas></BuscadorPersonas>
             <TablaMultiplicar></TablaMultiplicar>
+            <ContadorTareas></ContadorTareas>
         </div >
     )
 }
