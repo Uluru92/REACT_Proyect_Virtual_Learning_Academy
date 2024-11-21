@@ -16,10 +16,35 @@ const ContadorTareas: React.FC = () =>
         const pendingCount = task.length - completedCount;
         return { completedCount, pendingCount }
     }, [task]);
+
+    //para interactuar con el checkbox:
+    
+    const toggleTaskCompleted = (pid:number) => {
+        setTask(pTask =>
+            pTask.map(task =>
+                task.id === pid ? { ...task, completed: !task.completed } : task // los 3 puntos significa propagacion de syntaxis
+            )
+        );
+    };
     
     return (
         <div>
-            <h1>Este es el estatus de las tareas</h1>
+            <h1>Ejercicio Memo 3: Este es el estatus de las tareas</h1>
+            <h6>utilziando un checkbox</h6>
+            <ul>
+                {
+                    task.map(task => (
+                        <li key={task.id}>
+                            <input
+                                type="checkbox"
+                                checked={task.completed}
+                                onChange={()=>toggleTaskCompleted(task.id)}></input>
+                                {task.name}- {task.completed ? 'Completada' : 'Pendiente'}
+                        </li>
+                    ))
+                }
+            </ul>
+            <h6>utilizando lista</h6>
             <ul>
                 {
                     task.map(e => (
