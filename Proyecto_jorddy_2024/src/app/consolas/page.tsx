@@ -1,4 +1,3 @@
-
 "use client";
 import { Consola } from '../models/Consola';
 import ConsolaComponent from '../components/ConsolaComponent';
@@ -8,7 +7,6 @@ import '../styles/Consolas.css'
 import axios from 'axios';
 import { MyContext } from '../MyContext';
 import ErrorComponent from '../components/ErrorComponent';
-
 
 interface ApiResponse {
     Codigo: number;
@@ -58,24 +56,33 @@ export default function ConsolasPage() {
     return (
         <div>
             <CarouselComponent></CarouselComponent>
-            <div className="max-w-md mx-auto pt-5">
-                <div className="relative z-0 w-full mb-5 group">
-                    <input type="text" value={textoConsola} onChange={(e) => setTextoConsola(e.target.value)} name="floating_email" id="floating_email" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="Consola" />
+            <div className="max-w-md mx-auto pt-5 border border-yellow-100 m-2 pr-5 pl-5 shadow-lg bg-red-400">
+                <div className="relative z-0 w-full mb-5 group p-2">
+                    <input
+                        type="text"
+                        value={textoConsola}
+                        onChange={(e) => setTextoConsola(e.target.value)}
+                        name="floating_email" id="floating_email"
+                        className="block py-2.5 px-0 w-full text-sm text-black-100 border-2 border-b-3 border-gray-100 appearance-none dark:text-black dark:border-gray-800 dark:focus:border-red-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder="Buscar consola aqui..." />
                 </div>
             </div>
-            <div className='manejoLineal'>
-                {
-                    consolasFiltradas.map(consola => (
-                        <ConsolaComponent
-                            key={consola.id}
-                            id={consola.id.toString()}
-                            nombre={consola.nombre}
-                            imagenSrc={consola.imagen}
-                            descripcion={consola.descripcion}
-                            precio={consola.precio}
-                        ></ConsolaComponent>
-                    ))
-                }
+
+            <div className='contenedorConsolas'>
+                <div className='manejoLineal'>
+                    {
+                        consolasFiltradas.map(consola => (
+                            <ConsolaComponent
+                                key={consola.id}
+                                id={consola.id.toString()}
+                                nombre={consola.nombre}
+                                imagenSrc={consola.imagen}
+                                descripcion={consola.descripcion}
+                                precio={consola.precio}
+                            ></ConsolaComponent>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
