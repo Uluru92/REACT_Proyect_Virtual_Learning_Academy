@@ -15,7 +15,7 @@ const ProjectManager: React.FC = () =>
 
     return (
         <div>
-            <h1>Manejo del project manager</h1>
+            <h1>Manejo del project manager!</h1>
         </div>
     )
 }
