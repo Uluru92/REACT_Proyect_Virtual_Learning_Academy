@@ -2,6 +2,8 @@
 import image1 from "../img/Imagen1.jpg";
 import image2 from "../img/Imagen2.jpg";
 import image3 from "../img/Imagen3.jpg";
+import image4 from "../img/imagen4.jpg";
+import image5 from "../img/imagen5.jpg";
 import { StaticImageData } from "next/image";
 import Image from "next/image";import { useState, useEffect } from "react";
 
@@ -19,6 +21,12 @@ const images: ImageData[] = [
   {
     src: image3,
   },
+  {
+    src: image4,
+  },
+  {
+    src: image5,
+  },
 ];
 
 export default function CarouselComponent(): JSX.Element 
@@ -34,7 +42,7 @@ export default function CarouselComponent(): JSX.Element
     if (!isHovered) {
       const interval = setInterval(() => {
         nextSlide();
-      }, 7000);
+      }, 2000);
      
       return () => {
         clearInterval(interval);
@@ -44,13 +52,13 @@ export default function CarouselComponent(): JSX.Element
 
   return (
     <div className="mt-1">
-      <div className="relative h-[300px]">
+      <div className="relative h-[600px]">
         <Image
           src={images[currentIndex].src}
           alt={`Slider Image ${currentIndex + 1}`}
           layout="fill"
           objectFit="cover"
-          objectPosition="top" />
+          objectPosition='center' />
       </div>
     </div>
   );

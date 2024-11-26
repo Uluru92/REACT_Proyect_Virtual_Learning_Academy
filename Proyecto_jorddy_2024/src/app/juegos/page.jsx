@@ -1,9 +1,7 @@
-
 "use client";
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { MyContext } from '../MyContext';
 import ErrorComponent from '../components/ErrorComponent';
-
 
 function JuegosPage(){
 
@@ -21,7 +19,7 @@ function JuegosPage(){
 
     return (
         <div>
-            <h1>Esta es la pagina de login</h1>
+            <h1 >Selecciona tu video juego favorito</h1>
         </div>
     )
 }

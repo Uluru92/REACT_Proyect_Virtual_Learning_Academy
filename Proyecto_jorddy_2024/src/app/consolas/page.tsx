@@ -79,5 +79,4 @@ export default function ConsolasPage() {
             </div>
         </div>
     )
-
 }

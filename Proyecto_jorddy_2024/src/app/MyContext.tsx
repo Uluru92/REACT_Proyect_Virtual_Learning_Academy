@@ -1,3 +1,5 @@
+
+
 "use client";
 
 import React, { createContext, ReactNode, useState, useEffect, useRef } from "react";
@@ -33,7 +35,7 @@ const MyProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
       inactivityTimeoutRef.current = setTimeout(() => {
           console.log("Inactividad detectada, redirigiendo al login");
           router.push("/login");        
-      }, 10000); 
+      }, 10000000); 
     };
     
     const resetInactivityTimer = () => {      
