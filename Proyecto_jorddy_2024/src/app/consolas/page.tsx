@@ -64,7 +64,7 @@ export default function ConsolasPage() {
                         onChange={(e) => setTextoConsola(e.target.value)}
                         name="floating_email" id="floating_email"
                         className="text-center block py-2.5 px-0 w-full text-lg text-black-100 border-2 border-b-3 border-gray-100 appearance-none dark:text-black dark:border-gray-800 dark:focus:border-red-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                        placeholder="Buscar consola aqui..." />
+                        placeholder="Buscar consola aqui...." />
                 </div>
             </div>
 
