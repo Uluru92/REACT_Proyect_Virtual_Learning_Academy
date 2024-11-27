@@ -52,13 +52,13 @@ export default function CarouselComponent(): JSX.Element
 
   return (
     <div className="mt-1">
-      <div className="relative h-[600px]">
+      <div className="relative h-[700px]">
         <Image
           src={images[currentIndex].src}
           alt={`Slider Image ${currentIndex + 1}`}
           layout="fill"
           objectFit="cover"
-          objectPosition='center' />
+          objectPosition='top' />
       </div>
     </div>
   );
