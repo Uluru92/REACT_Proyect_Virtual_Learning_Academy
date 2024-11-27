@@ -1,0 +1,58 @@
+{
+    "VideoJuegos": [
+      {
+        "id":1,
+        "id_consola": 1,
+        "nombre" : "Spiderman Miles Morales",
+        "precio": 100
+      },
+      {
+        "id":2,
+        "id_consola": 1,
+        "nombre" : "Fifa 2025",
+        "precio": 100
+      },
+      {
+        "id":3,
+        "id_consola": 1,
+        "nombre" : "Fornite",
+        "precio": 100
+      },
+      {
+        "id":4,
+        "id_consola": 2,
+        "nombre" : "Halo",
+        "precio": 100
+      },
+      {
+        "id":5,
+        "id_consola": 2,
+        "nombre" : "Starfield",
+        "precio": 100
+      },
+      {
+        "id":6,
+        "id_consola": 3,
+        "nombre" : "Mario",
+        "precio": 100
+      },
+      {
+        "id":7,
+        "id_consola": 3,
+        "nombre" : "Supersmash",
+        "precio": 100
+      },
+      {
+        "id":8,
+        "id_consola": 3,
+        "nombre" : "Fornite",
+        "precio": 100
+      },
+      {
+        "id":9,
+        "id_consola": 2,
+        "nombre" : "Fornite",
+        "precio": 100
+      }
+    ]
+  }

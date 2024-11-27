@@ -53,17 +53,17 @@ function LoginPage() {
 
     return (
         <div>
-            <div className="bg-sky-100 flex justify-center items-center h-screen">
+            <div className="bg-red-800 flex justify-center items-center h-screen">
                 <div className="w-1/2 h-screen hidden lg:block">
                     <img
-                        src="https://img.freepik.com/fotos-premium/imagen-fondo_910766-187.jpg?w=826"
+                        src="/MonkeyKing.jpg"
                         alt="Descriptive placeholder"
                         className="object-cover w-full h-full"
                     />
                 </div>
                 <div className="lg:p-36 md:p-52 sm:20 p-8 w-full lg:w-1/2">
-                    <div className="mb-4 bg-sky-100">
-                        <label htmlFor="username" className="block text-gray-600">Usuario</label>
+                    <div className="mb-4">
+                        <label htmlFor="username" className="block text-gray-100">Usuario</label>
                         <input
                             type="text"
                             id="username"
@@ -75,7 +75,7 @@ function LoginPage() {
                         />
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="password" className="block text-gray-800">Contraseña</label>
+                        <label htmlFor="password" className="block text-gray-100">Contraseña</label>
                         <input
                             type="password"
                             id="password"
@@ -86,7 +86,6 @@ function LoginPage() {
                             onChange={(e) => setContrasena(e.target.value)}
                         />
                     </div>
-
                     <button
                         onClick={ValidarCredenciales}
                         className="bg-red-500 text-white font-semibold rounded-md py-2 px-4 w-full"

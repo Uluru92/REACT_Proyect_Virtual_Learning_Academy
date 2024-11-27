@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Imagen3 from "../img/PlayStation.png";
 import Image from "next/image";
 
 interface ConsolaComponentProps {
@@ -14,11 +13,10 @@ const ConsolaComponent: React.FC<ConsolaComponentProps> = ({ nombre,id, imagenSr
     const [showModal, setShowModal] = useState(false);
 
     return (
-        
         <div className="mx-auto" >
             <div className="max-w-[700px] dark:bg-blue border border-gray-500 square-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 m-9 p-4">
                 <a href="#">
-                    <Image className="square-t-lg" src={Imagen3} alt="" width={300} height={300}/>
+                    <Image className="square-t-lg" src={imagenSrc} alt="Consolas" width={300} height={300}/>
                 </a>
                 <div className="p-">
                     <a href="#">
@@ -42,7 +40,7 @@ const ConsolaComponent: React.FC<ConsolaComponentProps> = ({ nombre,id, imagenSr
                         <div className="relative w-auto my-6 mx-auto max-w-3xl">                            
                             <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                                 <div className="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
-                                    <h3 className="text-3xl font-semibold">Información de la consola</h3>
+                                    <h3 className="text-3xl font-semibold">Información de la consola {nombre}</h3>
                                     <button
                                         className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                                         onClick={() => setShowModal(false)}
@@ -53,11 +51,12 @@ const ConsolaComponent: React.FC<ConsolaComponentProps> = ({ nombre,id, imagenSr
                                     </button>
                                 </div>                               
                                 <div className="relative p-6 flex-auto">
-                                    <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                                       {precio}
+                                    
+                                    <p className="my-4 text-blueGray-500 text-lg leading-relaxed text-justify">
+                                       Descripción: {descripcion}
                                     </p>
-                                    <p className="my-4 text-blueGray-500 text-lg leading-relaxed">
-                                       {descripcion}
+                                    <p className="my-4 text-green-500 text-lg leading-relaxed">
+                                        Precio: {precio} mil colones
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
@@ -66,7 +65,7 @@ const ConsolaComponent: React.FC<ConsolaComponentProps> = ({ nombre,id, imagenSr
                                         type="button"
                                         onClick={() => setShowModal(false)}
                                     >
-                                        Close
+                                        Cerrar
                                     </button>                                    
                                 </div>
                             </div>

@@ -3,23 +3,23 @@
       {
         "id": 1,
         "nombre": "Play Station 5",
-        "imagen": "/app/img/PlayStation.png",
-        "precio": 700, 
-        "descripcion" : "Esto es un play 5"        
+        "imagen": "/PlayStation.png",
+        "precio": 500, 
+        "descripcion" : "Esta consola de Sony ofrece una experiencia de juego de última generación con gráficos impresionantes, tiempos de carga rápidos y un control innovador para una inmersión total."        
       },
       {
         "id": 2,
-        "nombre": "Xbox XSS",
-        "imagen": "/src/app/img/xbox.png",
-        "precio": 600,
-        "descripcion" : "Esto es un xbox serie xs"        
+        "nombre": "Xbox XS",
+        "imagen": "/xbox.png",
+        "precio": 450,
+        "descripcion" : "Una consola de videojuegos de Microsoft, destacada por su potente rendimiento, integración con servicios como Xbox Game Pass y su enfoque en la experiencia de juego en línea."        
       },
       {
         "id": 3,
         "nombre": "Nintendo Switch",
-        "imagen": "/img/nintendo.png",
-        "precio": 500,
-        "descripcion" : "Esto es una nintendo switch"        
+        "imagen": "/nintendo.png",
+        "precio": 300,
+        "descripcion" : "Una consola versátil que combina portabilidad y experiencia de juego en casa, con un diseño único y una fuerte orientación hacia la accesibilidad y la innovación."        
       }
     ]
   }

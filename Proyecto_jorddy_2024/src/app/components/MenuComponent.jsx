@@ -9,7 +9,10 @@ function MenuComponent()
                 <div className="text-gray-500 order-3 w-full md:w-auto md:order-2">
                     <ul className="flex font-semibold justify-between">
                         <li className="md:px-4 md:py-2 text-indigo-500">
-                            <Link href="/vla">VLA</Link>
+                            <Link href="/login">Tienda eSport</Link>
+                        </li>
+                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
+                            <Link href="/inicio">Inicio</Link>
                         </li>
                         <li className="md:px-4 md:py-2 hover:text-indigo-400">
                             <Link href="/consolas">Consolas</Link>
@@ -20,9 +23,7 @@ function MenuComponent()
                         <li className="md:px-4 md:py-2 hover:text-indigo-400">
                             <Link href="/suscripcion">Suscripciones</Link>
                         </li>
-                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                            <Link href="/inicio">Inicio</Link>
-                        </li>
+                        
                     </ul>
                 </div>
                 <div className="order-2 md:order-3">

@@ -1,0 +1,11 @@
+.manejoLineal{
+    display: flex;    
+}
+
+.estiloConsola{
+    padding: 10px;
+}
+
+.contenedorConsolas{
+    text-align:center;
+}
