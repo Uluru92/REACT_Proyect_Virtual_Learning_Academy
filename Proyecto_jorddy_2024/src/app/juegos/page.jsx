@@ -1,4 +1,5 @@
 "use client";
+import { VideoJuegos } from '../models/VideoJuegos';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { MyContext } from '../MyContext';
 import ErrorComponent from '../components/ErrorComponent';
