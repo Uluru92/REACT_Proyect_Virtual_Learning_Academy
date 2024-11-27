@@ -1,7 +1,14 @@
 "use client";
+import { VideoJuegos } from '../models/VideoJuegos';
 import { useContext, useEffect, useMemo, useState } from 'react';
 import { MyContext } from '../MyContext';
 import ErrorComponent from '../components/ErrorComponent';
+
+interface ApiResponse {
+    Codigo: number;
+    Descripcion: string;
+    Detalle: VideoJuegos[];
+}
 
 function JuegosPage(){
 
