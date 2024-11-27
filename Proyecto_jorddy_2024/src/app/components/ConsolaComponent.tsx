@@ -13,10 +13,14 @@ const ConsolaComponent: React.FC<ConsolaComponentProps> = ({ nombre,id, imagenSr
     const [showModal, setShowModal] = useState(false);
 
     return (
-        <div className="mx-auto" >
-            <div className="max-w-[700px] dark:bg-blue border border-gray-500 square-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 m-9 p-4">
+        <div className="mx-auto bg-gray-200" >
+            <div className="h-[300px] dark:bg-blue border border-gray-500 square-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 m-1 p-1">
                 <a href="#">
-                    <Image className="square-t-lg" src={imagenSrc} alt="Consolas" width={300} height={300}/>
+                    <Image
+                        className="square-t-lg"
+                        src={imagenSrc}
+                        alt="Consolas"
+                        width={300} height={300} />
                 </a>
                 <div className="p-">
                     <a href="#">
