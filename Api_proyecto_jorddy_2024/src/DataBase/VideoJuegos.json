@@ -4,55 +4,64 @@
         "id":1,
         "id_consola": 1,
         "nombre" : "Spiderman Miles Morales",
-        "precio": 100
+        "precio": 15000,
+        "imagen": "/Spiderman.jpg"
       },
       {
         "id":2,
         "id_consola": 1,
         "nombre" : "Fifa 2025",
-        "precio": 100
+        "precio": 18000,
+        "imagen": "/Fifa.jpg"
       },
       {
         "id":3,
         "id_consola": 1,
         "nombre" : "Fornite",
-        "precio": 100
+        "precio": 16000,
+        "imagen": "/Fornite.jpg"
       },
       {
         "id":4,
         "id_consola": 2,
         "nombre" : "Halo",
-        "precio": 100
+        "precio": 14000,
+        "imagen": "/Halo.jpg"
       },
       {
         "id":5,
         "id_consola": 2,
         "nombre" : "Starfield",
-        "precio": 100
+        "precio": 17000,
+        "imagen": "/Starfield.jpg"
       },
       {
         "id":6,
         "id_consola": 3,
         "nombre" : "Mario",
-        "precio": 100
+        "precio": 10000,
+        "imagen": "/Mario.jpg"
       },
       {
         "id":7,
         "id_consola": 3,
         "nombre" : "Supersmash",
-        "precio": 100
+        "precio": 11000,
+        "imagen": "/Supersmash.jpg"
       },
       {
         "id":8,
         "id_consola": 3,
         "nombre" : "Fornite",
-        "precio": 100
+        "precio": 15000,
+        "imagen": "/Fornite.jpg"
       },
       {
         "id":9,
         "id_consola": 2,
         "nombre" : "Fornite",
-        "precio": 100
+        "precio": 16000,
+        "imagen": "/Fornite.jpg"
       }
     ]
   }
