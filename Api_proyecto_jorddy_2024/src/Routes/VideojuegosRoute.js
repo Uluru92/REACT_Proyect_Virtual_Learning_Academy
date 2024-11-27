@@ -3,7 +3,7 @@ const router = express.Router();
 const accesoController = require("../Controllers/VideoJuegosController");
 
 router
-    .post("/ObtenerVideosJuegosPorConsola", accesoController.ObtenerVideosJuegosPorConsola)
+    .get("/ObtenerVideosJuegosPorConsola", accesoController.ObtenerVideosJuegosPorConsola)
    
 
 module.exports = router;
