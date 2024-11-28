@@ -4,34 +4,6 @@ import React from "react";
 function MenuComponent()
 {  
     return (
-        /*<nav className="bg-red-200 shadow shadow-gray--300 w-full px-8 md:px-auto">
-            <div className="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
-                <div className="text-gray-500 order-3 w-full md:w-auto md:order-2">
-                    <ul className="flex font-semibold justify-between">
-                        <li className="md:px-4 md:py-2 text-indigo-500">
-                            <Link href="/">Tienda eSport</Link>
-                        </li>
-                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                            <Link href="/login">Login</Link>
-                        </li>
-                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                            <Link href="/consolas">Consolas</Link>
-                        </li>
-                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                            <Link href="/juegos">Juegos</Link>
-                        </li>
-                        <li className="md:px-4 md:py-2 hover:text-indigo-400">
-                            <Link href="/suscripcion">Suscripciones</Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="order-2 md:order-3">
-                    <button className="px-10 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
-                        <span><Link href="/login">Login</Link></span>
-                    </button>
-                </div>
-            </div>
-        </nav>*/
 
         <nav className="bg-gray-800">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -67,8 +39,6 @@ function MenuComponent()
                 </div>
             </div>
         </nav>
-        
-        
     );
 }
 
