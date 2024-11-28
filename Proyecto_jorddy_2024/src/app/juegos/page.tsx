@@ -21,15 +21,13 @@ function JuegosPage() {
 
     const context = useContext(MyContext);
 
-    //Si el usuario no tiene el rol 
     if(!context)
         return <div><ErrorComponent></ErrorComponent></div>
 
     const {user}= context;    
 
-    if(!user || user.rol > 0)
+    if(!user)
         return <div><ErrorComponent></ErrorComponent></div>
-    //Si el usuario no tiene rol
 
     const videojuegosFiltrados = useMemo(() => {
         return videojuegos.filter(videojuegos => videojuegos.nombre.toLowerCase().includes(textoVideoJuegos.toLowerCase()));

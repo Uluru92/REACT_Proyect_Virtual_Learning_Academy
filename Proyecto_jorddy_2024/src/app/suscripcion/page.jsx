@@ -16,7 +16,6 @@ function SuscripionPage(){
 
     const context = useContext(MyContext);
 
-    //Si el usuario no tiene el rol 
     if(!context)
         return <div><ErrorComponent></ErrorComponent></div>
 
@@ -24,7 +23,6 @@ function SuscripionPage(){
 
     if(!user || user.rol > 0)
         return <div><ErrorComponent></ErrorComponent></div>
-    //Si el usuario no tiene rol
 
     function DarFormatoAlTelefono(e){
         const input = e.target.value.replace(/\D/g,'');

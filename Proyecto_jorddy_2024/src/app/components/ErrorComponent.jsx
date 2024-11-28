@@ -13,7 +13,7 @@ function ErrorComponent() {
                             src="/Error.jpg" alt="Error50"
                             width={800} height={800} />
                         
-                        <button className="mt-4 inline-block rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600">Por favor ingresa tu cuenta</button>
+                        <button className="mt-4 inline-block rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600">Por favor ingresa tu cuenta admin</button>
                      </Link>
                 </div>
             </div>

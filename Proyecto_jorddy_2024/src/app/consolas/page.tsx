@@ -20,15 +20,13 @@ export default function ConsolasPage() {
 
     const context = useContext(MyContext);
 
-    //Si el usuario no tiene el rol 
     if(!context)
         return <div><ErrorComponent></ErrorComponent></div>
 
     const {user}= context;    
 
-    if(!user || user.rol > 0)
+    if(!user)
         return <div><ErrorComponent></ErrorComponent></div>
-    //Si el usuario no tiene rol
 
     const consolasFiltradas = useMemo(() => {
         return consolas.filter(consola => consola.nombre.toLowerCase().includes(textoConsola.toLowerCase()));
