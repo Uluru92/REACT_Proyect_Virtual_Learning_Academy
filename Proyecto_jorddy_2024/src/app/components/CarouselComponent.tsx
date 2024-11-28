@@ -5,7 +5,8 @@ import image3 from "../img/Imagen3.jpg";
 import image4 from "../img/imagen4.jpg";
 import image5 from "../img/imagen5.jpg";
 import { StaticImageData } from "next/image";
-import Image from "next/image";import { useState, useEffect } from "react";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
 interface ImageData {
   src: StaticImageData;
