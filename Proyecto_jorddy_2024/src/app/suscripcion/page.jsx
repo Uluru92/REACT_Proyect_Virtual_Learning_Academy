@@ -77,6 +77,8 @@ function SuscripionPage(){
         setMostrarMensajeError(false);
         setMensajeExito("Gracias por suscribirse, pronto lo contactaremos!");
         setMostrarMensajeExito(true);
+
+        
     }
 
     return (

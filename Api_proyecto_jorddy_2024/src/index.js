@@ -2,6 +2,7 @@ const express = require("express");
 const RouterConsolas = require("./Routes/ConsolasRoute");
 const RouterVideoJuevos = require("./Routes/VideojuegosRoute");
 const RouterUsuarios = require("./Routes/UsuariosRoute");
+const RouterSuscriptores = require("./Routes/SuscriptoresRoute");
 
 const app = express();
 const port = 4321;
@@ -18,6 +19,7 @@ app.use(express.json());
 app.use("/api/route", RouterConsolas)
 app.use("/api/route", RouterVideoJuevos)
 app.use("/api/route", RouterUsuarios)
+app.use("/api/route", RouterSuscriptores)
 
 
 app.listen(port, ()=>{
