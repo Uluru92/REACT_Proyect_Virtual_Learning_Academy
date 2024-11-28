@@ -15,6 +15,7 @@ const GuardarSuscripcion = (req, res) =>
         tx =>
             tx.nombre === informacionSuscripciones.nombre &&
             tx.correo === informacionSuscripciones.correo &&
+            tx.apellido === informacionSuscripciones.apellido &&
             tx.telefono === informacionSuscripciones.telefono);
 
     let codigoDeRespuesta = 98;
