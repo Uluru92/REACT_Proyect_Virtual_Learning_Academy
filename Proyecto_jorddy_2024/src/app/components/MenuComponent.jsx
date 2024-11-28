@@ -12,18 +12,22 @@ function MenuComponent()
                         </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a className="rounded-md text-sm font-medium text-white" aria-current="page"><li className="md:px-4 md:py-2 text-yellow-300">
+                                <a className="rounded-md text-sm font-medium text-white" aria-current="page">
+                                    <li className="md:px-4 md:py-2 text-yellow-300">
                                         <Link href="/">Tienda eSport</Link>
                                     </li></a>
-                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-yellow-100 hover:text-white"> <Link href="/login"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-yellow-100 hover:text-white"> <Link href="/login">
+                                    <li className="md:px-4 md:py-2 hover:text-indigo-800">
                                        Login
-                                </li></Link></a>
-                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-green-100 hover:text-white"><Link href="/juegos"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                    </li></Link></a>
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-green-100 hover:text-white"><Link href="/juegos">
+                                    <li className="md:px-4 md:py-2 hover:text-indigo-800">
                                         Juegos
-                                </li></Link></a>
-                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-blue-200 hover:text-red"><Link href="/suscripcion"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                    </li></Link></a>
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-blue-200 hover:text-red"><Link href="/suscripcion">
+                                    <li className="md:px-4 md:py-2 hover:text-indigo-800">
                                         Suscripciones
-                                </li></Link></a>
+                                    </li></Link></a>
                                 </div>
                             </div>
                         </div>
