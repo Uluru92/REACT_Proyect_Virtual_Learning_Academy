@@ -1,9 +1,14 @@
 {
-    "Suscriptores": [
-      {
-        "correo": "adolfo2192@gmail.com",
-        "nombre": "Adolfo Vargas Sandoval",
-        "telefono": "8608-3879"    
-      }
-    ]
-  }
+  "Suscriptores": [
+    {
+      "correo": "adolfo2192@gmail.com",
+      "nombre": "Adolfo Vargas Sandoval",
+      "telefono": "8608-3879"
+    },
+    {
+      "correo": "jorddy@gmail.com",
+      "nombre": "Jorddy Castro Araya",
+      "telefono": "8608-3879"
+    }
+  ]
+}
