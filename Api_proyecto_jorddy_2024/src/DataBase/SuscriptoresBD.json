@@ -1,16 +1,16 @@
 {
   "Suscriptores": [
     {
-      "correo": "adolfo2192@gmail.com",
-      "nombre": "Adolfo ",
-      "apellido": "Vargas Sandoval",
+      "nombre": "Jorddy",
+      "correo": "jorddy@gmail.com",
+      "apellido": "Castro Araya",
       "telefono": "8608-3879"
     },
     {
-      "correo": "jorddy@gmail.com",
-      "nombre": "Jorddy ",
-      "apellido": "Castro Araya",
-      "telefono": "8608-3879"
+      "nombre": "Adolfo",
+      "correo": "Adolfo@gmail.com",
+      "apellido": "Vargas",
+      "telefono": "7777-7777"
     }
   ]
 }

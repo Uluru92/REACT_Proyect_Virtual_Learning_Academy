@@ -24,7 +24,7 @@ function MenuComponent()
                                     <li className="md:px-4 md:py-2 hover:text-indigo-800">
                                         Consolas
                                     </li></Link></a>
-                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-green-100 hover:text-white"><Link href="/juegos">
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-red-100 hover:text-white"><Link href="/juegos">
                                     <li className="md:px-4 md:py-2 hover:text-indigo-800">
                                         Juegos
                                     </li></Link></a>

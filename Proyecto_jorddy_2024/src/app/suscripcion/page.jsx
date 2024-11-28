@@ -53,30 +53,65 @@ function SuscripionPage(){
         }
     }
 
-
-    function RegistrarSuscriptor()
-    {
+    async function RegistrarSuscriptor() {
         let error = "";
 
-        if(nombre== "" || apellido==""||correo == "" || telefono == "")        
-            error = "Ninguno de los campos puede estar en blanco";        
-        else if(!correoValido)
+        if (nombre === "" || apellido === "" || correo === "" || telefono === "")
+            error = "Ninguno de los campos puede estar en blanco";
+        else if (!correoValido)
             error = "El formato del correo no es correcto, solo dominio gmail.com.";
-        else if(telefono.length <=8)
+        else if (telefono.length <= 8)
             error = "El teléfono debe tener el formato XXXX-XXXX.";
         else
-            error="";     
-        
-        if (error!= "") {
+            error = "";
+
+        if (error !== "") {
             setMensajeError(error);
             setMostrarMensajeError(true);
             setMostrarMensajeExito(false);
-            return; 
+            return;
         }
+
         setMensajeError("");
         setMostrarMensajeError(false);
-        setMensajeExito("Gracias por suscribirse, pronto lo contactaremos!");
-        setMostrarMensajeExito(true);
+
+        const suscriptor = {
+            nombre: nombre.trim(),
+            correo: correo.trim(),
+            apellido: apellido.trim(),
+            telefono: telefono.trim(),
+        };
+
+        try {
+            const response = await fetch(`http://localhost:4321/api/route/RegistrarNuevoSuscriptor`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(suscriptor),
+            });
+
+            const result = await response.json();
+
+            if (result.Codigo === 0) {
+                setMensajeExito(result.Descripcion || "Gracias por suscribirse, pronto lo contactaremos!");
+                setMostrarMensajeExito(true);
+                setMostrarMensajeError(false);
+
+                setCorreo("");
+                setNombre("");
+                setApellido("");
+                setTelefono("");
+            } else {
+                setMensajeError(result.Descripcion || "Ocurrió un error al registrar el suscriptor.");
+                setMostrarMensajeError(true);
+                setMostrarMensajeExito(false);
+            }
+        } catch (err) {
+            setMensajeError("Error al conectar con el servidor. Inténtalo de nuevo más tarde.");
+            setMostrarMensajeError(true);
+            setMostrarMensajeExito(false);
+        }
     }
 
     return (
