@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 function MenuComponent()
-{
+{  
     return (
         <nav className="bg-gray-800">
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -12,18 +12,18 @@ function MenuComponent()
                         </div>
                             <div className="hidden sm:ml-6 sm:block">
                                 <div className="flex space-x-4">
-                                    <a className="rounded-md px-3 py-2 text-sm font-medium text-white" aria-current="page"><li className="md:px-4 md:py-2 text-yellow-300">
+                                    <a className="rounded-md text-sm font-medium text-white" aria-current="page"><li className="md:px-4 md:py-2 text-yellow-300">
                                         <Link href="/">Tienda eSport</Link>
                                     </li></a>
-                                    <a  className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-yellow-100 hover:text-white"><li className="md:px-4 md:py-2 hover:text-indigo-400">
-                                        <Link href="/login">Login</Link>
-                                    </li></a>
-                                    <a className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-green-100 hover:text-white"><li className="md:px-4 md:py-2 hover:text-indigo-400">
-                                        <Link href="/juegos">Juegos</Link>
-                                    </li></a>
-                                    <a className="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-blue-100 hover:text-white"><li className="md:px-4 md:py-2 hover:text-indigo-400">
-                                        <Link href="/suscripcion">Suscripciones</Link>
-                                    </li></a>
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-yellow-100 hover:text-white"> <Link href="/login"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                       Login
+                                </li></Link></a>
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-green-100 hover:text-white"><Link href="/juegos"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                        Juegos
+                                </li></Link></a>
+                                <a className="rounded-md text-sm font-medium text-gray-100 hover:bg-blue-200 hover:text-red"><Link href="/suscripcion"><li className="md:px-4 md:py-2 hover:text-indigo-800">
+                                        Suscripciones
+                                </li></Link></a>
                                 </div>
                             </div>
                         </div>
