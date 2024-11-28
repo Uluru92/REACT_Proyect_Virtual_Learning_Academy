@@ -1,18 +1,18 @@
 "use client";
 import { use, useContext, useState } from 'react'
 import { MyContext } from '../MyContext';
-
 import ErrorComponent from '../components/ErrorComponent';
 
 function SuscripionPage(){
-    
     const [correo, setCorreo] = useState("");
     const [nombre, setNombre] = useState("");
     const [apellido, setApellido]= useState("");
     const [telefono, setTelefono] = useState("");    
     const [mensajeError, setMensajeError] = useState("");
+    const [mensajeExito, setMensajeExito] = useState("");
     const [correoValido, setCorreoValido] = useState(true);
     const [mostrarMensajeError, setMostrarMensajeError] = useState(false);
+    const [mostrarMensajeExito, setMostrarMensajeExito] = useState(false);
 
     const context = useContext(MyContext);
 
@@ -56,19 +56,27 @@ function SuscripionPage(){
 
     function RegistrarSuscriptor()
     {
+        let error = "";
+
         if(nombre== "" || apellido==""||correo == "" || telefono == "")        
-            setMensajeError("Ninguno de los campos puede estar en blanco");        
+            error = "Ninguno de los campos puede estar en blanco";        
         else if(!correoValido)
-            setMensajeError("El formato del correo no es correcto, solo dominio gmail.com");
+            error = "El formato del correo no es correcto, solo dominio gmail.com.";
         else if(telefono.length <=8)
-            setMensajeError("El teléfono debe tener el formato XXXX-XXXX");
+            error = "El teléfono debe tener el formato XXXX-XXXX.";
         else
-            setMensajeError("");     
+            error="";     
         
-        if(mensajeError!="")
+        if (error!= "") {
+            setMensajeError(error);
             setMostrarMensajeError(true);
-        else
-            setMostrarMensajeError(false);
+            setMostrarMensajeExito(false);
+            return; 
+        }
+        setMensajeError("");
+        setMostrarMensajeError(false);
+        setMensajeExito("Gracias por suscribirse, pronto lo contactaremos!");
+        setMostrarMensajeExito(true);
     }
 
     return (
@@ -92,14 +100,25 @@ function SuscripionPage(){
                 </div>
                 <button onClick={RegistrarSuscriptor} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
                 {
-                    mostrarMensajeError && (<div className='pt-5' role="alert">
+                    mostrarMensajeError && (<div className='pt-5'>
                         <div className="bg-red-500 text-white font-bold rounded-t px-4 py-2">
-                            Danger
+                            Error
                         </div>
                         <div className="border border-t-0 border-red-400 rounded-b bg-red-100 px-4 py-3 text-red-700">
                             <p>{mensajeError}</p>
                         </div>
                     </div>)
+                }
+                {
+                    mostrarMensajeExito && (<div className='pt-5'>
+                        <div className="bg-green-500 text-white font-bold rounded-t px-4 py-2">
+                            Información procesada
+                        </div>
+                        <div className="border border-t-0 border-green-400 rounded-b bg-green-300 px-4 py-3 text-green-700">
+                            <p>{mensajeExito}</p>
+                        </div>
+                    </div>)
+
                 }
                 
             </div>

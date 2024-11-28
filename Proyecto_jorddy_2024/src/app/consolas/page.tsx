@@ -57,15 +57,15 @@ export default function ConsolasPage() {
         <div>
             <CarouselComponent></CarouselComponent>
 
-                <div className="max-w-[400px] mx-auto border border-yellow-100 shadow-lg bg-red-600 m-5">
+            <div className="max-w-[500px] mx-auto shadow-lg bg-yellow-600 m-5">
                     <div className="relative z-0 w-full group p-1 block">
                         <input
                             type="text"
                             value={textoConsola}
                             onChange={(e) => setTextoConsola(e.target.value)}
                             name="floating_email" id="floating_email"
-                            className="text-center block py-2.5 px-0 w-full text-lg text-black-100 border-2 border-b-3 border-gray-100 appearance-none dark:text-black dark:border-gray-800 dark:focus:border-red-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder="Buscar consola aqui...." />
+                        className="text-center block py-2.5 px-0 w-full text-lg text-black-100 border-2 border-b-3 border-gray-100 appearance-none dark:text-black dark:border-gray-800 dark:focus:border-red-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder="Buscar consola..." />
                     </div>
                 </div>
 
