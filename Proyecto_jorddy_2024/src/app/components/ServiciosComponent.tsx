@@ -9,7 +9,7 @@ const ListaComponent = () => {
 
     return (
         <div>
-            <h1 className="text-center block py-5 px-8 text-lg text-red-700 border-2 border-b-10 border-gray-500  ">Welcome to Uluru's eSport Store</h1>
+            <h1 className="text-center block py-2 px-8 text-lg text-red-700">Welcome to Uluru's eSport Store</h1>
             <br /><br />
             <ul>
                 {items.map((item, index) => (

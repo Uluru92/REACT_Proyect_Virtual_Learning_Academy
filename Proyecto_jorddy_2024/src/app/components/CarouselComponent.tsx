@@ -52,7 +52,7 @@ export default function CarouselComponent(): JSX.Element
   }, [isHovered]);
 
   return (
-    <div className="mt-1">
+    <div>
       <div className="relative h-[700px]">
         <Image
           src={images[currentIndex].src}
